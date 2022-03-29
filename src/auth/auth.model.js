@@ -1,4 +1,5 @@
 import { MongoClient } from 'mongodb';
+// import MongoDB from "mongodb";
 
 
 const URI = 'mongodb+srv://ddr400:ddr400@cluster0.gu7j0.mongodb.net/shield-project?retryWrites=true&w=majority';

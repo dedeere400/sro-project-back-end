@@ -1,4 +1,5 @@
 import * as EmailValidator from 'email-validator';
+// import EmailValidator from "email-validator";
 import jwt from 'jsonwebtoken';
 import { jwt_secret } from './auth.secrets.js';
 
@@ -31,7 +32,7 @@ export const validateAuth = (req, res, next) => {
         next();
     } catch (err) {
         // el token NO es válido o no hay token
-        console.error(err);
+        console.error(err, 'El usuario o el password son invalidos');
         res.sendStatus(401);
     }
 }
